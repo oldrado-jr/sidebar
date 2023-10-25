@@ -22,9 +22,55 @@ body * {
   color: var(--text-color);
 }
 
+#container {
+  display: flex;
+  gap: 20px;
+}
+
 main h1 {
   display: inline-block;
   font-size: 25px;
   font-weight: 500;
-  margin: 18px 20px;
+  margin-top: 18px;
+}
+
+header nav {
+  background: var(--green);
+  padding-top: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: max(100vh, 500px);
+}
+
+header nav div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 21px;
+}
+
+header nav div img {
+  margin-top: 13px;
+}
+
+header nav div img:first-child {
+  margin: 0;
+}
+
+header nav div img:nth-child(2) {
+  background: var(--light-grey);
+  border-radius: 12px;
+  padding: 13px;
+  margin-top: 5px;
+}
+
+header nav div img:nth-child(3) {
+  margin-top: 0;
+}
+
+#logout-icon {
+  background: rgba(220, 228, 227, 0.6);
+  padding: 18px 27px;
 }
