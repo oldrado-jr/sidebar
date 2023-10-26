@@ -1,3 +1,3 @@
 document.querySelector('#menu-icon').addEventListener('click', () => {
-  document.querySelector('header').classList.toggle('open-sidebar');
+  document.querySelector('.sidebar').classList.toggle('open-sidebar');
 });
